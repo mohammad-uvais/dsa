@@ -1,18 +1,20 @@
 function binarySearch(arr, target) {
-  let start_index = 0;
-  let end_index = arr.length - 1;
+  if (arr.length > 0) {
+    let start_index = 0;
+    let end_index = arr.length - 1;
 
-  while (start_index <= end_index) {
-    let middle_index = Math.floor((start_index + end_index) / 2);
+    while (start_index <= end_index) {
+      let middle_index = Math.floor((start_index + end_index) / 2);
 
-    if (arr[middle_index] === target) {
-      return middle_index;
-    }
+      if (arr[middle_index] === target) {
+        return middle_index;
+      }
 
-    if (arr[middle_index] < target) {
-      start_index = middle_index + 1;
-    } else if (arr[middle_index] > target) {
-      end_index = middle_index - 1;
+      if (arr[middle_index] < target) {
+        start_index = middle_index + 1;
+      } else if (arr[middle_index] > target) {
+        end_index = middle_index - 1;
+      }
     }
   }
 
