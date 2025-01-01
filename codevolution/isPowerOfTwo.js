@@ -1,20 +1,19 @@
 function isPowerOfTwo(num) {
-    if (num < 1) {
-        return false;
+  if (num < 1) {
+    return false;
+  }
+
+  let quotient = num;
+
+  while (quotient > 1) {
+    if (quotient % 2 !== 0) {
+      return false;
     }
 
-    let quotient = num;
+    quotient = quotient / 2;
+  }
 
-    while (quotient > 1) {
-
-        if (quotient % 2 !== 0) {
-            return false;
-        }
-
-        quotient = quotient / 2;
-    }
-
-    return true;
+  return true;
 }
 
 // Big-O => O(logn)

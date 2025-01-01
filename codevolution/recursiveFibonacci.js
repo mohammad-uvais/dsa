@@ -1,9 +1,9 @@
 function recursiveFibonacci(num) {
-    if (num < 2) {
-        return num;
-    }
+  if (num < 2) {
+    return num;
+  }
 
-    return recursiveFibonacci(num - 1) + recursiveFibonacci(num - 2);
+  return recursiveFibonacci(num - 1) + recursiveFibonacci(num - 2);
 }
 
 console.log(recursiveFibonacci(0));
