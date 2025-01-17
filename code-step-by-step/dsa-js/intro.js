@@ -46,3 +46,9 @@
  * Sorting
  * Merge
  */
+
+/**
+ * Tools
+ * MS Whiteboard
+ * MS Clipchamp
+ */
