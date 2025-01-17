@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Search Element in Array</title>
+        <script>
+            function searchElement() {
+                let data = [20, 40, 60, 5, 10, 70, 80, 99];
+                let item = document.getElementById("searchEl").value;
+                item = parseInt(item);
+                let index = undefined;
+                for (let i = 0; i <= data.length - 1; i++) {
+                    if (data[i] === item) {
+                        index = i;
+                        break;
+                    }
+                }
+                console.warn(index);
+                // console.warn(data.indexOf(item));
+                // data.splice(2, 1); // to delete an element from index 2;
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="searchEl" placeholder="enter value" />
+        <button onclick="searchElement()">Search Element</button>
+    </body>
+</html>
