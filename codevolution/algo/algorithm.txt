@@ -1,0 +1,80 @@
+What is an Algorithm?
+A set of well-defined instructions to solve a particular problem.
+
+Characterstics:
+It should have well defined inputs and outputs
+Each step should be clear and unambiguous
+an algorithm should be language independent
+
+Why Algorithms?
+As a developer, you're going to come across problems that you need to solve.
+Learning alogorithms translates to learning different techniques to efficiently solve those problems.
+
+Algorithm analysis
+The absolute running time of an algorithm cannot be predicted, since it depends on a number of factors:
+- Programming language used to implement the algorithm
+- The computer on which the program runs
+- Other programs running at the same time
+- Quality of the OS
+and many other factors...
+
+We evaluate the performance of an algorithms in terms of its input size
+
+Evaluation is of two types:
+Time complexity: Amount of time taken by an algorithm to run, as a function of input size
+Space complexity: Amount of memory taken by an algorithm to run, as a function of input size
+
+Thers is no one solution that works every single time. It is always good to know multiple ways to solve the problem and use the best solution, given your contraints
+
+If your app needs to be very quick and has plenty of memory to work with, you don't have to worry about space complexity
+If you have very little memory to work with, you should pick a solution that is relatively slower but needs less space
+
+
+How to represent complexity?
+Using Asymptotic Notations
+- These are mathematical tools to represent time and space complexity
+There are mainly 3 asymptotic notations :-
+1. Big-O Notation - Worst case complexity
+2. Omega Notation - Best case complexity
+3. Theta Notation - Average case complexity
+
+
+Big-O Notation
+The worst case complexity of an algorithm is represented using the Big-O notation
+
+It has two important characterstics
+- It is expressed in terms of the input
+- It focuses on the bigger picture without getting caught up in the minute details
+
+Big-O Time complexity
+We count the number of times a statement executes based on the input size
+
+Note :-
+Multiple algorithms exist for the same problem and there is no one right solution. Different algorithms work well under different constraints.
+The same algorithm with the same programming language can be implemented in different ways.
+When writing programs to work, don't lose sight of the picture. If you are writing a function that is called thousands of times every minute, sure go ahead and optimise the code.
+Rather than writing clever code, write code that is simple to read and maintain.
+
+
+Objects - Big-O
+An object is a collection of key-value pairs
+
+insert - O(1)
+remove - O(1)
+access - O(1)
+search - O(n)
+Object.keys() - O(n)
+Object.values() - O(n)
+Object.entries() - O(n)
+
+
+Array - Big-O
+An array is an ordered collection of values
+
+insert/remove at end - O(1)
+insert/remove at beginning - O(n)
+access - O(1)
+search - O(n)
+Push/pop - O(1)
+Shift/unshift/concat/slice/splice - O(n)
+forEach/map/filter/reduce - O(n)
